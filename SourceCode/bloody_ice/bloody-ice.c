@@ -17,7 +17,7 @@
  * 2023 Beaver, Bloody Ice
 
 
-This Gimp plugin can be tested without installing by pasting this syntax into Gimp's GEGL Graph filter. This is also something a GEGL dev should study if they want to make plugins of their own..
+This Gimp plugin can be tested without installing by pasting this syntax into Gimpꞌs GEGL Graph filter. This is also something a GEGL dev should study if they want to make plugins of their own..
 --
 
 gaussian-blur std-dev-x=0.5 std-dev-y=0.5 color-overlay value=#840917 id=0 gimp:layer-mode layer-mode=hardlight aux=[ ref=0 emboss depth=1  ] id=1 gimp:layer-mode layer-mode=hsl-color opacity=0.91 aux=[ ref=1 color-overlay value=#ff0000  ] noise-reduction iterations=3
@@ -70,7 +70,7 @@ property_seed (seed, _("Random seed for icicles"), rand)
 
 
 property_double (hue, _("Hue Rotation"),  0.0)
-   description  (_("Color rotation. Either '-180/180' with lightness tweaks is Aqua Blue which resembles Ice text styles. Default '0' is Blood Red"))
+   description  (_("Color rotation. Either ꞌ-180/180ꞌ with lightness tweaks is Aqua Blue which resembles Ice text styles. Default ꞌ0ꞌ is Blood Red"))
    value_range  (-180.0, 180.0)
 
 
@@ -208,7 +208,7 @@ gegl_op_class_init (GeglOpClass *klass)
     "name",        "lb:bloody-ice",
     "title",       _("Bloody Ice"),
     "reference-hash", "nblodvricasa48j3gj21g4ac",
-    "description", _("Transform plain text into a 'Bloody to Icicle text style' The reason this filter's name is 'bloody ice' is because when red it looks like blood themed horror-esque text but when blue/aqua it looks like ice themed text."),
+    "description", _("Transform plain text into a ꞌBloody to Icicle text styleꞌ The reason this filterꞌs name is ꞌbloody iceꞌ is because when red it looks like blood themed horror-esque text but when blue/aqua it looks like ice themed text."),
     "gimp:menu-path", "<Image>/Filters/Text Styling",
     "gimp:menu-label", _("Bloody Ice..."),
     NULL);
